@@ -1,0 +1,41 @@
+[
+  {
+    "question": "What is your favorite color?",
+    "answers": ["black", "purple", "white","chair"],
+    "correct": "table"
+  },
+  {
+    "question": "How do you spell billy properly?",
+    "answers": ["bbilly","billy","Billie","bille"],
+    "correct": "billy"
+  },
+  {
+    "question": "Eat or Sleep?",
+    "answers": ["eat","sleep"],
+    "correct": "sleep"
+  },
+  {
+    "question": "If humans weren't the dominant species, which animal would be the top of the food chain?",
+    "answers": ["Guinea Pig", "Lion","Blue Whale", "duck"],
+    "correct": "duck"
+  },
+  {
+    "question": "How old is Mr.Regan?",
+    "answers": ["123456789","54","infinity he has traveled through time","2"],
+    "correct": "2"
+  },
+  {
+    "question": "gdialhj",
+    "answers": ["no","yes"],
+    "correct": "yes"
+  },
+  {
+    "question": "What is the meaning of life?",
+    "answers": ["nothing","42","You and you only can define the meaning of life","bill"],
+    "correct":"bill"
+  },
+  {
+    "question": ""
+  }
+
+]
