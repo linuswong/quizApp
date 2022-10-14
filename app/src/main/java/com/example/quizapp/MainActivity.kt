@@ -33,6 +33,22 @@ class MainActivity : AppCompatActivity() {
         wireWidgets()
         loadQuestions()
         setup()
+        
+        answer1.setOnClickListener{
+            thingy.checkAnswer(answer1.text)
+        }
+        answer2.setOnClickListener{
+            thingy.checkAnswer(answer2.text)
+            
+        }
+        answer3.setOnClickListener{
+            thingy.checkAnswer(answer3.text)
+            
+        }
+        answer4.setOnClickListener{
+            thingy.checkAnswer(answer4.text)
+            
+        }
 
 
 
@@ -57,16 +73,22 @@ class MainActivity : AppCompatActivity() {
     private fun setup(){
         //var holder:List<String> =thingy.getAnswers()
         //val nums:List<Int> =   mutableListOf(0,1)
+        var x=thingy.getAnswers.size()
         question.text=thingy.getQuestion()
+        score.text="$(scoreText)"+ thingy.score
+        
+        answer3.visibility=View.INVISIBLE
+        answer4.visibility=View.INVISIBLE
+        
 
-        if(thingy.getAnswers().size>=2){
-            answer1.visibility= View.VISIBLE
-            answer2.visibility= View.VISIBLE
-        }
-        if(thingy.getAnswers().size>=3){
+//         if(x>=2){
+//             answer1.visibility= View.VISIBLE
+//             answer2.visibility= View.VISIBLE
+//         }
+        if(x>=3){
             answer3.visibility= View.VISIBLE
         }
-        if(thingy.getAnswers().size==4){
+        if(x==4){
             answer4.visibility= View.VISIBLE
         }
 
