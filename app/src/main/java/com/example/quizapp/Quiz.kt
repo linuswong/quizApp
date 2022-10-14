@@ -1,15 +1,33 @@
 package com.example.quizapp
 
 class Quiz(val questions:List<Question>) {
+    
+    
+    var score=0
+    var counter=0
+    var currentQuestion: Question= questions.get(counter)
+    
 
     fun getQuestion():String{
-        return questions.get(0).question
+        return currentQuestion.question
     }
     fun getAnswers():List<String>{
-        return questions.get(0).answers
+        return currentQuestion.answers
     }
     fun getCorrect():String{
-        return questions.get(0).correct
+        return currentQuestion.correct
+    }
+    
+    fun answerCorrect(choice: String): Boolean{
+        currentQuestion= questions.get(counter)
+        if (choice.equals(currentQuestion.correct)){
+        score++     
+        }
+     counter++
+     return choice.equals(currentQuestion.correct)
+    }
+    fun urDone(){
+     return counter+1==questions.size()   
     }
 
 }
